@@ -25,7 +25,7 @@ def euro_vanilla_put(S, K, T, r, sigma):
     put = (K * np.exp(-r * T) * si.norm.cdf(-d2, 0.0, 1.0) - S * si.norm.cdf(-d1, 0.0, 1.0))
     return put
 
-def euro_vanilla_put(S, K, T, r, sigma, optio = 'call'):
+def euro_vanilla_put(S, K, T, r, sigma, option = 'call'):
     d1 = (np.log(S/K) + (r + 0.5 * sigma ** 2) * T) / (sigma * np.sqrt(T))
     d2 = (np.log(S/K) + (R - 0.5 * sigma ** 2) * T)/ (sigma * np.sqrt(T))
     
