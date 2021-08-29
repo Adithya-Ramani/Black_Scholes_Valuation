@@ -1,4 +1,4 @@
-# Black Scholes Maluation
+# Black Scholes Method of Options Valuation
 
 Black Scholes is a popular options pricing model. It assumes logonormal distribution and derives the price of an option. 
 This model is suitable to value only European style option and its not fit to value American Options, as it does not consider the option of exercise before the expiration date.
